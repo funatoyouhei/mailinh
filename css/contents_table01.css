@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+/*--基本--*/
+
+.block_table_1 .inner_item_txt_before,
+.block_table_8 .inner_item_txt_before{
+	margin-bottom: 20px;
+}
+.block_table_1 .inner_item_txt_after
+.block_table_8 .inner_item_txt_after{
+	margin-top: 20px;
+}
+.block_table_1.wauto table,
+.block_table_8.wauto table{
+	table-layout: auto;
+}
+div[class*="block_table_"] table{
+	background: var(--i_bg_color);
+	color: var(--i_txt_color);
+}
+div[class*="block_table_"] thead,
+div[class*="block_table_"] th{
+	background: var(--i_sub2_color);
+}
+.block_table_8 table thead,
+.block_table_8 table th{
+	background: var(--i_bg_color);
+}
+
+/*---テーブル1（そのまま）---*/
+
+.block_table_1 table,
+.block_table_8 table{
+	width: 100%;
+	word-wrap: break-word;
+	table-layout: fixed;
+	border-collapse: collapse;
+	min-width: 100%;
+}
+
+.block_table_1 table caption,
+.block_table_8 table caption{
+	font-weight: bold;
+	text-align: left;
+	margin-bottom: 5px;
+}
+
+.block_table_1 table th,
+.block_table_8 table th{
+	padding: 6px;
+}
+
+.block_table_1 table td,
+.block_table_8 table td{
+	padding: 6px;
+}
+
+/*--1個目セル幅--*/
+
+.block_table_1.w10 table tr:nth-of-type(1)>td:first-child,
+.block_table_1.w10 table tr:nth-of-type(1)>th:first-child,
+.block_table_8.w10 table tr:nth-of-type(1)>td:first-child,
+.block_table_8.w10 table tr:nth-of-type(1)>th:first-child{
+	width: 10%;
+}
+.block_table_1.w20 table tr:nth-of-type(1)>td:first-child,
+.block_table_1.w20 table tr:nth-of-type(1)>th:first-child,
+.block_table_8.w20 table tr:nth-of-type(1)>td:first-child,
+.block_table_8.w20 table tr:nth-of-type(1)>th:first-child{
+	width: 20%;
+}
+.block_table_1.w30 table tr:nth-of-type(1)>td:first-child,
+.block_table_1.w30 table tr:nth-of-type(1)>th:first-child,
+.block_table_8.w30 table tr:nth-of-type(1)>td:first-child,
+.block_table_8.w30 table tr:nth-of-type(1)>th:first-child{
+	width: 30%;
+}
+.block_table_1.w40 table tr:nth-of-type(1)>td:first-child,
+.block_table_1.w40 table tr:nth-of-type(1)>th:first-child,
+.block_table_8.w40 table tr:nth-of-type(1)>td:first-child,
+.block_table_8.w40 table tr:nth-of-type(1)>th:first-child{
+	width: 40%;
+}
+.block_table_1.w50 table tr:nth-of-type(1)>td:first-child,
+.block_table_1.w50 table tr:nth-of-type(1)>th:first-child,
+.block_table_8.w50 table tr:nth-of-type(1)>td:first-child,
+.block_table_8.w50 table tr:nth-of-type(1)>th:first-child{
+	width: 50%;
+}
+.block_table_1.w60 table tr:nth-of-type(1)>td:first-child,
+.block_table_1.w60 table tr:nth-of-type(1)>th:first-child,
+.block_table_8.w60 table tr:nth-of-type(1)>td:first-child,
+.block_table_8.w60 table tr:nth-of-type(1)>th:first-child{
+	width: 60%;
+}
+.block_table_1.w70 table tr:nth-of-type(1)>td:first-child,
+.block_table_1.w70 table tr:nth-of-type(1)>th:first-child,
+.block_table_8.w70 table tr:nth-of-type(1)>td:first-child,
+.block_table_8.w70 table tr:nth-of-type(1)>th:first-child{
+	width: 70%;
+}
+.block_table_1.w80 table tr:nth-of-type(1)>td:first-child,
+.block_table_1.w80 table tr:nth-of-type(1)>th:first-child,
+.block_table_8.w80 table tr:nth-of-type(1)>td:first-child,
+.block_table_8.w80 table tr:nth-of-type(1)>th:first-child{
+	width: 80%;
+}
+.block_table_1.w90 table tr:nth-of-type(1)>td:first-child,
+.block_table_1.w90 table tr:nth-of-type(1)>th:first-child,
+.block_table_8.w90 table tr:nth-of-type(1)>td:first-child,
+.block_table_8.w90 table tr:nth-of-type(1)>th:first-child{
+	width: 90%;
+}
+/*
+@media screen and (max-width: 500px){
+	.block_table_1 table tr:nth-of-type(1)>td:first-child,
+	.block_table_1 table tr:nth-of-type(1)>th:first-child{
+		width: inherit !important;
+	}
+}*/

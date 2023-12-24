@@ -1,0 +1,31 @@
+@charset "UTF-8";
+.recruit_archive.add_design .recruitment_list .inner_item,
+.recruit_archive.add_design1 .recruitment_list .inner_item{
+	width: 31%;
+	margin: 0 1% 30px;
+}
+
+@media screen and (max-width: 1000px){
+	.recruit_archive.add_design .recruitment_list .inner_item,
+	.recruit_archive.add_design1 .recruitment_list .inner_item{
+		width: 46%;
+		margin: 0 1.7% 30px;
+	}
+}
+
+@media screen and (max-width: 500px){
+	.recruit_archive.add_design .recruitment_list .inner_item,
+	.recruit_archive.add_design1 .recruitment_list .inner_item{
+		width: 100%;
+		margin: 0 auto 30px;
+	}
+}
+
+.recruit table a[href*='tel:']{
+	pointer-events: none;
+}
+@media screen and (max-width: 750px){
+	.recruit table a[href*='tel:']{
+		pointer-events: auto;
+	}
+}

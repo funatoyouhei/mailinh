@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+/*--基本--*/
+
+.contents_faq01 .wrapper_item{
+	margin-bottom: 40px;
+}
+.contents_faq01 .mb40{
+	margin-bottom: 20px !important;
+}
+
+.contents_faq01 dl{
+	display: block;
+	padding: 15px 0;
+	border-bottom: 1px solid var(--i_border_color);
+}
+.contents_faq01 dl:nth-of-type(1){
+	border-top: 1px solid var(--i_border_color);
+}
+.contents_faq01 dl:last-child{
+	padding: 15px 0 !important;
+}
+.contents_faq01 dt,
+.contents_faq01 dd{
+	display: block;
+}
+.contents_faq01 dt{
+	position: relative;
+	align-items: center;
+	justify-content: flex-start;
+	min-height: 35px;
+	margin-bottom: 10px !important;
+}
+.contents_faq01 dt:before{
+	content: "Q";
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.contents_faq01 dd{
+	margin-top: 10px;
+	position: relative;
+}
+.contents_faq01 dd:before{
+	content: "A";
+	position: absolute;
+	top: 0;
+	left: 2.3rem;
+}
+.contents_faq01 .contents_btn01{
+	width: 100%;
+	max-width: 1200px;
+	padding: 30px 0 0;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+@media screen and (max-width: 500px){
+	.contents_faq01 dt{
+		cursor: pointer;
+		margin-bottom: 0 !important;
+	}
+}
+.contents_faq01.add_design2 dt{
+	cursor: pointer;
+	margin-bottom: 0 !important;
+}
+.contents_faq01.add_design2 dd{
+	display: none;
+}
+.contents_faq01.add_design3 dt{
+	cursor: auto !important;
+	margin-bottom: 10px !important;
+}
+.contents_faq01.add_design3 dd{
+	display: block !important;
+}

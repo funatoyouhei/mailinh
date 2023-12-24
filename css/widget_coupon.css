@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+.widget_coupon .inner_item{
+	padding: 20px 20px 0;
+	margin-bottom: 40px;
+	border: 10px solid var(--i_sub2_color);
+}
+.widget_coupon .inner_item>h3{
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+	border-bottom: 1px solid var(--i_border_color);
+}
+.widget_coupon .inner_item>div{
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+	border-bottom: 1px solid var(--i_border_color);
+}
+.widget_coupon dl{
+	display: block;
+	margin-bottom: 15px;
+}
+.widget_coupon dt,
+.widget_coupon dd{
+	display: block;
+}
+.widget_coupon .coupon_limit{
+	display: block;
+	text-align: center;
+	padding: 5px 10px;
+	background: var(--i_sub2_color);
+}
+.widget_coupon .coupon_limit dt,
+.widget_coupon .coupon_limit dd{
+	display: inline-block;
+}
+.widget_coupon .coupon_limit dt:after{
+	content: "：";
+}
+
+/* More CSS */
+.widget_coupon .coupon_limit dd.expiry-date{
+	font-weight: 300;
+}

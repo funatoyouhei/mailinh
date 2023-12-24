@@ -1,0 +1,177 @@
+@charset "UTF-8";
+
+/*--基本--*/
+
+.block_table_3 .inner_item_txt_before,
+.block_table_7 .inner_item_txt_before{
+	margin-bottom: 20px;
+}
+.block_table_3 .inner_item_txt_after,
+.block_table_7 .inner_item_txt_after{
+	margin-top: 20px;
+}
+.block_table_3.wauto table,
+.block_table_7.wauto table{
+	table-layout: auto;
+}
+
+/*---テーブル3（css+js組み換え）---*/
+
+.block_table_3 table,
+.block_table_7 table{
+	width: 100%;
+	word-wrap: break-word;
+	table-layout: fixed;
+	border-collapse: collapse;
+	min-width: 100%;
+}
+
+.block_table_3 table caption,
+.block_table_7 table caption{
+	font-weight: bold;
+	text-align: left;
+	margin-bottom: 5px;
+}
+
+.block_table_3 table th,
+.block_table_7 table th{
+	padding: 6px;
+}
+
+.block_table_3 table td,
+.block_table_7 table td{
+	padding: 6px;
+}
+
+.block_table_3 table thead td,
+.block_table_7 table thead td{
+	text-align: center;
+	font-weight: bold;
+}
+
+.block_table_7 .outer{
+	overflow: auto;
+}
+
+@media screen and (max-width: 500px){
+	.block_table_3 table{
+		display: block;
+	}
+
+	.block_table_3 table caption{
+		display: block;
+	}
+
+	.block_table_3 table thead{
+		display: none;
+	}
+
+	.block_table_3 table tbody{
+		width: auto;
+		display: block;
+	}
+
+	.block_table_3 table tr{
+		width: auto;
+		display: block;
+	}
+
+	.block_table_3 table th{
+		width: auto;
+		display: block;
+		border: none;
+	}
+
+	.block_table_3 table td{
+		width: auto;
+		display: block;
+		border-bottom: none;
+		border-left: none;
+		border-right: none;
+	}
+}
+
+.block_table_3_item{
+	display: table;
+	width: 100%;
+	table-layout: fixed;
+}
+.block_table_3_item li{
+	display: table-cell;
+}
+.block_table_3_item li:nth-of-type(1){
+	width: 20%;
+	padding-right: 6px;
+}
+
+.block_table_7.wauto table{
+	table-layout: auto;
+	white-space: nowrap;
+}
+
+/*--1個目セル幅--*/
+
+.block_table_3.w20 table tr:nth-of-type(1)>td:first-child,
+.block_table_3.w20 table tr:nth-of-type(1)>th:first-child,
+.block_table_7.w20 table tr:nth-of-type(1)>td:first-child,
+.block_table_7.w20 table tr:nth-of-type(1)>th:first-child{
+	width: 20%;
+}
+.block_table_3.w30 table tr:nth-of-type(1)>td:first-child,
+.block_table_3.w30 table tr:nth-of-type(1)>th:first-child,
+.block_table_7.w30 table tr:nth-of-type(1)>td:first-child,
+.block_table_7.w30 table tr:nth-of-type(1)>th:first-child{
+	width: 30%;
+}
+.block_table_3.w40 table tr:nth-of-type(1)>td:first-child,
+.block_table_3.w40 table tr:nth-of-type(1)>th:first-child,
+.block_table_7.w40 table tr:nth-of-type(1)>td:first-child,
+.block_table_7.w40 table tr:nth-of-type(1)>th:first-child{
+	width: 40%;
+}
+.block_table_3.w50 table tr:nth-of-type(1)>td:first-child,
+.block_table_3.w50 table tr:nth-of-type(1)>th:first-child,
+.block_table_7.w50 table tr:nth-of-type(1)>td:first-child,
+.block_table_7.w50 table tr:nth-of-type(1)>th:first-child{
+	width: 50%;
+}
+.block_table_3.w60 table tr:nth-of-type(1)>td:first-child,
+.block_table_3.w60 table tr:nth-of-type(1)>th:first-child,
+.block_table_7.w60 table tr:nth-of-type(1)>td:first-child,
+.block_table_7.w60 table tr:nth-of-type(1)>th:first-child{
+	width: 60%;
+}
+.block_table_3.w70 table tr:nth-of-type(1)>td:first-child,
+.block_table_3.w70 table tr:nth-of-type(1)>th:first-child,
+.block_table_7.w70 table tr:nth-of-type(1)>td:first-child,
+.block_table_7.w70 table tr:nth-of-type(1)>th:first-child{
+	width: 70%;
+}
+.block_table_3.w80 table tr:nth-of-type(1)>td:first-child,
+.block_table_3.w80 table tr:nth-of-type(1)>th:first-child,
+.block_table_7.w80 table tr:nth-of-type(1)>td:first-child,
+.block_table_7.w80 table tr:nth-of-type(1)>th:first-child{
+	width: 80%;
+}
+
+@media screen and (max-width: 500px){
+	.block_table_3 table tr:nth-of-type(1)>td:first-child,
+	.block_table_3 table tr:nth-of-type(1)>th:first-child{
+		width: inherit !important;
+	}
+
+	.block_table_3 table{
+		border-bottom: 1px solid var(--i_border_color);
+	}
+	.block_table_3 table th{
+		border-top: 1px solid var(--i_border_color);
+	}
+	.block_table_3 table td{
+		border-top: 1px dotted var(--i_border_color);
+	}
+}
+
+.block_table_7 table tr:nth-of-type(1)>td:first-child,
+.block_table_7 table tr:nth-of-type(1)>th:first-child{
+	width: inherit !important;
+}

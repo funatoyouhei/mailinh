@@ -1,0 +1,183 @@
+@charset "UTF-8";
+
+/*--基本--*/
+
+.block_table_2 .inner_item_txt_before,
+.block_table_5 .inner_item_txt_before,
+.block_table_6 .inner_item_txt_before{
+  margin-bottom: 20px;
+}
+.block_table_2 .inner_item_txt_after,
+.block_table_5 .inner_item_txt_after,
+.block_table_6 .inner_item_txt_after{
+  margin-top: 20px;
+}
+.block_table_2.wauto table,
+.block_table_5.wauto table,
+.block_table_6.wauto table{
+  table-layout: auto;
+  display: table;
+}
+
+/*---テーブル2（css+js組み換え）---*/
+
+.block_table_2 table,
+.block_table_5 table,
+.block_table_6 table{
+  width: 100%;
+  word-wrap: break-word;
+  table-layout: fixed;
+  border-collapse: collapse;
+  min-width: 100%;
+}
+
+.block_table_2 table caption,
+.block_table_5 table caption,
+.block_table_6 table caption{
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.block_table_2 table th,
+.block_table_5 table th,
+.block_table_6 table th{
+  padding: 6px;
+}
+
+.block_table_2 table td,
+.block_table_5 table td,
+.block_table_6 table td{
+  padding: 6px;
+}
+
+.block_table_6 .outer{
+  overflow: auto;
+}
+
+.block_table_2 table{
+  display: block;
+}
+@media screen and (max-width: 500px){
+  .block_table_2 table caption{
+    display: block;
+  }
+
+  .block_table_2 table thead{
+    display: none;
+  }
+
+  .block_table_2 table tbody{
+    display: none;
+  }
+
+  .block_table_2 table tbody.block_table_2_item{
+    display: block;
+  }
+
+  .block_table_2 table tr{
+    width: auto;
+    display: block;
+  }
+
+  .block_table_2 table th{
+    width: auto;
+    display: block;
+    border: none;
+  }
+
+  .block_table_2 table td{
+    width: auto;
+    display: block;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+  }
+}
+
+.block_table_6.wauto table{
+  table-layout: auto;
+  white-space: nowrap;
+}
+
+/*--1個目セル幅--*/
+
+.block_table_2.w20 table tr:nth-of-type(1)>td:first-child,
+.block_table_2.w20 table tr:nth-of-type(1)>th:first-child,
+.block_table_5.w20 table tr:nth-of-type(1)>td:first-child,
+.block_table_5.w20 table tr:nth-of-type(1)>th:first-child,
+.block_table_6.w20 table tr:nth-of-type(1)>td:first-child,
+.block_table_6.w20 table tr:nth-of-type(1)>th:first-child{
+  width: 20%;
+}
+.block_table_2.w30 table tr:nth-of-type(1)>td:first-child,
+.block_table_2.w30 table tr:nth-of-type(1)>th:first-child,
+.block_table_5.w30 table tr:nth-of-type(1)>td:first-child,
+.block_table_5.w30 table tr:nth-of-type(1)>th:first-child,
+.block_table_6.w30 table tr:nth-of-type(1)>td:first-child,
+.block_table_6.w30 table tr:nth-of-type(1)>th:first-child{
+  width: 30%;
+}
+.block_table_2.w40 table tr:nth-of-type(1)>td:first-child,
+.block_table_2.w40 table tr:nth-of-type(1)>th:first-child,
+.block_table_5.w40 table tr:nth-of-type(1)>td:first-child,
+.block_table_5.w40 table tr:nth-of-type(1)>th:first-child,
+.block_table_6.w40 table tr:nth-of-type(1)>td:first-child,
+.block_table_6.w40 table tr:nth-of-type(1)>th:first-child{
+  width: 40%;
+}
+.block_table_2.w50 table tr:nth-of-type(1)>td:first-child,
+.block_table_2.w50 table tr:nth-of-type(1)>th:first-child,
+.block_table_5.w50 table tr:nth-of-type(1)>td:first-child,
+.block_table_5.w50 table tr:nth-of-type(1)>th:first-child,
+.block_table_6.w50 table tr:nth-of-type(1)>td:first-child,
+.block_table_6.w50 table tr:nth-of-type(1)>th:first-child{
+  width: 50%;
+}
+.block_table_2.w60 table tr:nth-of-type(1)>td:first-child,
+.block_table_2.w60 table tr:nth-of-type(1)>th:first-child,
+.block_table_5.w60 table tr:nth-of-type(1)>td:first-child,
+.block_table_5.w60 table tr:nth-of-type(1)>th:first-child,
+.block_table_6.w60 table tr:nth-of-type(1)>td:first-child,
+.block_table_6.w60 table tr:nth-of-type(1)>th:first-child{
+  width: 60%;
+}
+.block_table_2.w70 table tr:nth-of-type(1)>td:first-child,
+.block_table_2.w70 table tr:nth-of-type(1)>th:first-child,
+.block_table_5.w70 table tr:nth-of-type(1)>td:first-child,
+.block_table_5.w70 table tr:nth-of-type(1)>th:first-child,
+.block_table_6.w70 table tr:nth-of-type(1)>td:first-child,
+.block_table_6.w70 table tr:nth-of-type(1)>th:first-child{
+  width: 70%;
+}
+.block_table_2.w80 table tr:nth-of-type(1)>td:first-child,
+.block_table_2.w80 table tr:nth-of-type(1)>th:first-child,
+.block_table_5.w80 table tr:nth-of-type(1)>td:first-child,
+.block_table_5.w80 table tr:nth-of-type(1)>th:first-child,
+.block_table_6.w80 table tr:nth-of-type(1)>td:first-child,
+.block_table_6.w80 table tr:nth-of-type(1)>th:first-child{
+  width: 80%;
+}
+.block_table_2 table tr:nth-of-type(1)>td:first-child,
+.block_table_2 table tr:nth-of-type(1)>th:first-child,
+.block_table_5 table tr:nth-of-type(1)>td:first-child,
+.block_table_5 table tr:nth-of-type(1)>th:first-child,
+.block_table_6 table tr:nth-of-type(1)>td:first-child,
+.block_table_6 table tr:nth-of-type(1)>th:first-child{
+  width: inherit !important;
+}
+
+.block_table_2 table{
+  border-bottom: 1px solid var(--i_border_color);
+}
+.block_table_2 table th{
+  border-top: 1px solid var(--i_border_color);
+}
+.block_table_2 table td{
+  border-top: 1px dotted var(--i_border_color);
+}
+@media screen and (max-width: 500px){
+  .block_table_2 table tr:nth-of-type(1)>td:first-child, .block_table_2 table tr:nth-of-type(1)>th:first-child {
+    width: inherit !important;
+  }
+}
